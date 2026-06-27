@@ -123,6 +123,9 @@ export async function POST(request: NextRequest) {
       preview: rows.slice(0, 3).map((r) => r.normalizedData),
     });
   } catch (error: any) {
+     console.error("UPLOAD ERROR:");
+  console.error(error);
+  console.error(error.stack);
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
 }
