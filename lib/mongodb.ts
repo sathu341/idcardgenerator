@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const MONGODB_URI = process.env.MONGODB_URI||'mongodb+srv://sathishchandran321:9uYGXNxjs7qFQqn9@cluster0.0k4nwbh.mongodb.net/idcard_db?retryWrites=true&w=majority&appName=Cluster0';
+const MONGODB_URI = process.env.MONGODB_URI||'mongodb+srv://sathishedu:sathish170384@cluster1.lbuvy.mongodb.net/idcard_dbs?appName=Cluster1';
 
 if (!MONGODB_URI) {
   throw new Error(
