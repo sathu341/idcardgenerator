@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import * as XLSX from 'xlsx';
-// import { connectDB } from '@/lib/mongodb';
+ import { connectDB } from '@/lib/mongodb';
 import { Card } from '@/models/Card';
 
 /** Normalise a column key to snake_case alphanumeric */
