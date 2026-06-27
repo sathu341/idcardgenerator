@@ -27,7 +27,7 @@ const cache = global.mongooseCache;
 export async function connectDB() {
   if (cache.conn) return cache.conn;
   if (!cache.promise) {
-    cache.promise = mongoose.connect('mongodb://127.0.0.1:27017/id-card-creator', { bufferCommands: false });
+    cache.promise = mongoose.connect('mongodb+srv://sathishedu:sathish170384@cluster1.lbuvy.mongodb.net/idcard_dbs?appName=Cluster1', { bufferCommands: false });
   }
   cache.conn = await cache.promise;
   return cache.conn;
